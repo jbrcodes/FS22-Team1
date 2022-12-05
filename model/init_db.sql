@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS users_books;
 DROP TABLE IF EXISTS clubs;
 DROP TABLE IF EXISTS books_clubs;
 DROP TABLE IF EXISTS users_clubs;
--- SET foreign_key_checks = 1;
+SET foreign_key_checks = 1;
 
 
 CREATE TABLE `users`(
@@ -124,7 +124,7 @@ INSERT INTO clubs (name, category, next_mtg_time, next_mtg_location_name, next_m
      ("Reimagined History", "historical fiction", "20:00:00", "Barça Cafe", "C. d'Aristedes Maillol, 12", "Barcelona", "Spain", "08028", "https://images.unsplash.com/photo-1461360370896-922624d12aa1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"),
      ("Child's Play", "childrens literature", "12:00:00", "Ciutadella Parc", "C. d'Aristedes Maillol, 12", "Barcelona", "Spain", "08028", "https://i.pinimg.com/736x/54/45/0f/54450f404a3362d89e15d66d72c9c7f0.jpg"),
      ("Travel the world one book at a time", "travel", "14:00:00", "Cafe Melbourne", "4615 St Laurent Blvd", "Montreal", "Canada", "H2T 1R2", "https://images.unsplash.com/photo-1440778303588-435521a205bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbCUyMGFuZCUyMGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"),
-     ("Discover world cuisine", "travel", "17:00:00", "Cafefin", "nám. J. z Poděbrad 1407/4", "Prague", "Czech Republic", "120 00", "https://www.lacademie.com/wp-content/uploads/2022/04/asian-cuisines.jpg"), ("The lives they lived", "biography", "17:00:00", "Petitbo", "Pg. de Sant Joan, 82", "Barcelona", "Spain", "08009", "https://www.rd.com/wp-content/uploads/2018/09/autobiographies.jpg"), ("In the mind of Roald Dahl", "childrens literature", "10:00:00", "La Fontaine park", "La Fontaine", "Montreal", "Canada", "H2L 3A7", "https://www.myfamilyourneeds.co.uk/wp-content/uploads/2020/02/36064-scaled.jpg"), ("The greats", "classics", "17:00:00", "Cafe Cosmo", "C/ d'Enric Granados, 3", "Barcelona", "Spain", "08007", "https://images.unsplash.com/photo-1550399105-c4db5fb85c18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"), ("Time to unwind", "casual", "20:00:00", "Pub Le Sainte-Élisabeth", "1412 Rue Sainte-Elisabeth", "Montreal", "Canada", "H2X 1L4", "https://hips.hearstapps.com/cos.h-cdn.co/assets/16/23/1465225018-reading-1.jpg");
+     ("Discover world cuisine", "travel", "17:00:00", "Cafefin", "nam. J. z Podebrad 1407/4", "Prague", "Czech Republic", "120 00", "https://www.lacademie.com/wp-content/uploads/2022/04/asian-cuisines.jpg"), ("The lives they lived", "biography", "17:00:00", "Petitbo", "Pg. de Sant Joan, 82", "Barcelona", "Spain", "08009", "https://www.rd.com/wp-content/uploads/2018/09/autobiographies.jpg"), ("In the mind of Roald Dahl", "childrens literature", "10:00:00", "La Fontaine park", "La Fontaine", "Montreal", "Canada", "H2L 3A7", "https://www.myfamilyourneeds.co.uk/wp-content/uploads/2020/02/36064-scaled.jpg"), ("The greats", "classics", "17:00:00", "Cafe Cosmo", "C/ d'Enric Granados, 3", "Barcelona", "Spain", "08007", "https://images.unsplash.com/photo-1550399105-c4db5fb85c18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"), ("Time to unwind", "casual", "20:00:00", "Pub Le Sainte-Élisabeth", "1412 Rue Sainte-Elisabeth", "Montreal", "Canada", "H2X 1L4", "https://hips.hearstapps.com/cos.h-cdn.co/assets/16/23/1465225018-reading-1.jpg");
 
 
 
@@ -143,4 +143,4 @@ INSERT INTO books_clubs (book_id, club_id, date)
 
 INSERT INTO users_clubs (club_id, user_id, admin)
     VALUES (1, 1, 1), (1, 3, 0), (1, 4, 0), (1, 5, 0), (1, 6, 0), (2, 1, 0), (2, 2, 1), (3, 4, 1), (3, 5, 0), (3, 6, 0), (4, 6, 0), (4, 5, 1), (5, 1, 0), (5, 6, 1), (5, 3, 0), (5, 4, 0), (5, 5, 0), (6, 3, 1), (7, 6, 1), (7, 5, 0), (8, 1, 1), (9, 1, 0), (9, 4, 1), (9, 5, 0), (9, 6, 0), (10, 3, 1), (10, 4, 0), (10, 5, 0), (10, 6, 0);
-SET foreign_key_checks = 1;
+-- SET foreign_key_checks = 1;
